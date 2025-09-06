@@ -1,3 +1,14 @@
-BETWEEN:
+CONSULTING  AGREEMENT – Simplified Summary
 
-1. <extra_id_0> -
+1. Parties involved:
+o Nexus  Software  Solutions  Pvt. Ltd.
+o The Company
+o A. The Company
+o SCOPE OF SERVICES  
+The Consultant shall provide the following services to the Company
+2. Purpose: The Company is engaged in the business of developing and marketing enterprise software solutions.
+3. No rights or licenses (patents, copyrights, trademarks, or IP) are granted under this Agreement.
+4. The Company is engaged in the business of developing and marketing enterprise software solutions.
+5. Advising on the design and implementation of a scalable cloud infrastructure for the Company’s new flagship product, ConnectSphere.
+6. The Company is engaged in the business of developing and marketing enterprise software solutions.
+7. Advising on the design and implementation of a scalable cloud infrastructure for the Company’s new flagship product, ConnectSphere.

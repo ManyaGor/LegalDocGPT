@@ -1,3 +1,24 @@
-BETWEEN:
+MUTUAL NON -DISCLOSURE AGREEMENT – Simplified Summary
 
-1. <extra_id_0> a.
+1. Parties involved:
+o InnovateNext Technologies Pvt. Ltd.
+o AND  
+DataWise Analytics LLP , a Limited Liability Partnership registered under the Limited 
+Liability Partnership
+o If any provision of this Agreement is found to be 
+unenforceable, the remainder shall be enforced as fully as possible.  
+IN WITNESS WHEREOF , the Parties have executed this Agreement as of the Effective 
+Date.  
+For InnovateNext Technologies Pvt. Ltd.
+o For DataWise Analytics LLP
+2. Purpose: The Parties agree that the competent courts in Mumbai, India shall have exclusive jurisdiction to settle any dispute or claim that arises out of or in connection with this Agreement.
+3. Obligations of the Receiving Party:
+o Keep the information in strict confidence and protect it like its own confidential data.
+o Not share it with any third party without the written consent of the Disclosing Party.
+o Use it only for the Purpose and nothing else.
+o Share it only with employees, directors, advisors, or consultants who need to know, provided they also follow confidentiality obligations.
+4. On termination or written request, the Receiving Party must return or destroy all confidential documents and copies.
+5. Governing Law: This Agreement shall be governed by the laws of India.
+6. InnovateNext Technologies Pvt.
+7. , a company incorporated under the Companies Act, 2013, having its registered office at 7th Floor, Tech Park One, Powa Sunita Sharma Address: Flat 801, Royal Palms, Goregaon, Mumbai 400065.
+8. The Parties agree that the competent courts in Mumbai, India shall have exclusive jurisdiction to settle any dispute or claim that arises out of or in connection with this Agreement.

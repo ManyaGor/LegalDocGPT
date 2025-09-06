@@ -1,3 +1,17 @@
-The Assignee is engaged in the business of developing an AI-powered networking platform and is desirous of acquiring all
+DEED OF ASSIGNMENT OF INTELLECTUAL PROPERTY – Simplified Summary
 
-1. <extra_id_0>:
+1. Parties involved:
+o AND
+ConnectSphere AI Pvt. Ltd.
+o For ConnectSphere AI Pvt. Ltd.
+o Mr. Arjun Srinivasan
+o Mr. Ramesh Srinivasan
+2. Obligations of the Receiving Party:
+o Keep the information in strict confidence and protect it like its own confidential data.
+o Not share it with any third party without the written consent of the Disclosing Party.
+o Use it only for the Purpose and nothing else.
+o Share it only with employees, directors, advisors, or consultants who need to know, provided they also follow confidentiality obligations.
+3. Governing Law: This Agreement shall be governed by the laws of India.
+4. The Deed of Assignment (the “Deed”) is made and executed on this 22nd day of August, 2025.
+5. The Parties agree that the competent courts in Mumbai, Maharashtra, shall have exclusive jurisdiction to resolve any disputes arising hereunder.
+6. ASSIGNOR’S REPRESENTATIONS AND WARRANTIES SocialGraph Engine is a proprietary software system comprising source code, algorithms, and technical documentation for the analysis of social and professional networks.
