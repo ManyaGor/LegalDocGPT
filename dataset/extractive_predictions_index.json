@@ -1,0 +1,122 @@
+[
+  {
+    "id": "doc1",
+    "text": "data\\predictions_text\\doc1_extractive.txt",
+    "pdf": "data\\predictions_pdf\\doc1_extractive.pdf",
+    "n_points": 8
+  },
+  {
+    "id": "doc10",
+    "text": "data\\predictions_text\\doc10_extractive.txt",
+    "pdf": "data\\predictions_pdf\\doc10_extractive.pdf",
+    "n_points": 7
+  },
+  {
+    "id": "doc11",
+    "text": "data\\predictions_text\\doc11_extractive.txt",
+    "pdf": "data\\predictions_pdf\\doc11_extractive.pdf",
+    "n_points": 7
+  },
+  {
+    "id": "doc12",
+    "text": "data\\predictions_text\\doc12_extractive.txt",
+    "pdf": "data\\predictions_pdf\\doc12_extractive.pdf",
+    "n_points": 6
+  },
+  {
+    "id": "doc13",
+    "text": "data\\predictions_text\\doc13_extractive.txt",
+    "pdf": "data\\predictions_pdf\\doc13_extractive.pdf",
+    "n_points": 4
+  },
+  {
+    "id": "doc14",
+    "text": "data\\predictions_text\\doc14_extractive.txt",
+    "pdf": "data\\predictions_pdf\\doc14_extractive.pdf",
+    "n_points": 7
+  },
+  {
+    "id": "doc15",
+    "text": "data\\predictions_text\\doc15_extractive.txt",
+    "pdf": "data\\predictions_pdf\\doc15_extractive.pdf",
+    "n_points": 3
+  },
+  {
+    "id": "doc16",
+    "text": "data\\predictions_text\\doc16_extractive.txt",
+    "pdf": "data\\predictions_pdf\\doc16_extractive.pdf",
+    "n_points": 8
+  },
+  {
+    "id": "doc17",
+    "text": "data\\predictions_text\\doc17_extractive.txt",
+    "pdf": "data\\predictions_pdf\\doc17_extractive.pdf",
+    "n_points": 5
+  },
+  {
+    "id": "doc18",
+    "text": "data\\predictions_text\\doc18_extractive.txt",
+    "pdf": "data\\predictions_pdf\\doc18_extractive.pdf",
+    "n_points": 3
+  },
+  {
+    "id": "doc19",
+    "text": "data\\predictions_text\\doc19_extractive.txt",
+    "pdf": "data\\predictions_pdf\\doc19_extractive.pdf",
+    "n_points": 3
+  },
+  {
+    "id": "doc2",
+    "text": "data\\predictions_text\\doc2_extractive.txt",
+    "pdf": "data\\predictions_pdf\\doc2_extractive.pdf",
+    "n_points": 7
+  },
+  {
+    "id": "doc20",
+    "text": "data\\predictions_text\\doc20_extractive.txt",
+    "pdf": "data\\predictions_pdf\\doc20_extractive.pdf",
+    "n_points": 3
+  },
+  {
+    "id": "doc3",
+    "text": "data\\predictions_text\\doc3_extractive.txt",
+    "pdf": "data\\predictions_pdf\\doc3_extractive.pdf",
+    "n_points": 7
+  },
+  {
+    "id": "doc4",
+    "text": "data\\predictions_text\\doc4_extractive.txt",
+    "pdf": "data\\predictions_pdf\\doc4_extractive.pdf",
+    "n_points": 7
+  },
+  {
+    "id": "doc5",
+    "text": "data\\predictions_text\\doc5_extractive.txt",
+    "pdf": "data\\predictions_pdf\\doc5_extractive.pdf",
+    "n_points": 7
+  },
+  {
+    "id": "doc6",
+    "text": "data\\predictions_text\\doc6_extractive.txt",
+    "pdf": "data\\predictions_pdf\\doc6_extractive.pdf",
+    "n_points": 7
+  },
+  {
+    "id": "doc7",
+    "text": "data\\predictions_text\\doc7_extractive.txt",
+    "pdf": "data\\predictions_pdf\\doc7_extractive.pdf",
+    "n_points": 6
+  },
+  {
+    "id": "doc8",
+    "text": "data\\predictions_text\\doc8_extractive.txt",
+    "pdf": "data\\predictions_pdf\\doc8_extractive.pdf",
+    "n_points": 8
+  },
+  {
+    "id": "doc9",
+    "text": "data\\predictions_text\\doc9_extractive.txt",
+    "pdf": "data\\predictions_pdf\\doc9_extractive.pdf",
+    "n_points": 6
+  }
+]

@@ -1,0 +1,14 @@
+doc12 — Extractive Summary
+
+1. BY AND BETWEEN: Mr. Arjun Srinivasan, son of Mr. Ramesh Srinivasan, residing at 45, 12th Main Road, Indiranagar, Bangalore, Karnataka - 560038, India (hereinafter referred to as the “Assignor”), AND ConnectSphere AI Pvt.
+
+2. Ltd., a company incorporated under the Companies Act, 2013, with its registered office at 2102, 21st Floor, Peninsula Business Park, Lower Parel, Mumbai - 400013, India, represented by its director Ms. Priya Sharma (hereinafter referred to as the “Assignee”).
+
+3. The Assignor has independently developed and is the sole and exclusive owner of a proprietary machine learning algorithm and related source code for social network analysis, more particularly described in Schedule A hereto (the “Intellectual Property”).
+
+4. ASSIGNMENT In consideration of the issuance of 1,000 (one thousand) equity shares of the Assignee to the Assignor and a one-time payment of ₹1,00,000/- (Rupees One Lakh only), the receipt of which the Assignor hereby acknowledges, the Assignor hereby irrevocably and unconditionally sells, transfers, and assigns to the Assignee, its successors and assigns, absolutely and forever, his entire worldwide right, title, and interest in and to the Intellectual Property.
+
+5. FURTHER ASSURANCE The Assignor covenants that he will, at the request and expense of the Assignee, execute and sign any and all further documents, applications, or instruments as may be necessary to perfect the Assignee's title and ownership of the Intellectual Property and to enable the Assignee to register the same in any part of the world.
+
+6. Ltd. Name: Priya Sharma Title: Director WITNESSES: Name: Alok Gupta Address: Koramangala, Bangalore Name: Neha Singh Address: Dadar, Mumbai SCHEDULE A DESCRIPTION OF THE INTELLECTUAL PROPERTY Title: SocialGraph Engine Description: A proprietary software system comprising source code, algorithms, and technical documentation for the analysis of social and professional networks.
+

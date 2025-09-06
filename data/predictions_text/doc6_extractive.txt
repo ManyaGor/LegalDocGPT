@@ -1,0 +1,16 @@
+doc6 — Extractive Summary
+
+1. Ltd., a company incorporated under the Companies Act, 2013, having its registered office at 101, First Floor, Pride Plaza, Senapati Bapat Road, Pune, Maharashtra - 411016, India (hereinafter referred to as the “ Client ”), AND CodeGenius Infotech LLP, a Limited Liability Partnership registered under the LLP Act, 2008, with its principal p lace of business at 3rd Floor, Innovate IT Park, Vashi, Navi Mumbai, Maharashtra - 400703, India (hereinafter referred to as the “Developer ”).
+
+2. TOTAL PROJECT COST The total fixed cost for the services described in Annexure A shall be ₹15,00,000/ - (Rupees F ifteen Lakh only), exclusive of applicable Goods and Services Tax (GST).
+
+3. ACCEPTANCE TESTING Upon final delivery of the Software, the Client shall have a period of fourteen (14) business days (the “Acceptance Period”) to te st the Software to confirm that it functions in accordance with the specifications in the SOW.
+
+4. INTELLECTUAL PROPERTY RIGHTS Upon receipt of the full and final payment by the Developer, all rights, title, and interest, including all inte llectual property rights, in and to the custom -developed source code, object code, and associated documentation of the Software shall be transferred to and vest exclusively with the Client.
+
+5. Ltd. Name: Rina Mehta Title: Director For CodeGenius Infotech LLP Name: Sameer Shah Title: Designated Partner ANNEXURE A STATEMENT OF WORK (SOW) Project: "FreshHarvest" Mobile Application Development 1.
+
+6. Key Deliverables:  iOS Mobile Application (compatible with latest iOS version )  Android Mobile Application (compatible with Android versions 9.0 and above)  Web-based Admin Panel for managing users, products, and orders.
+
+7. Core Features of the Mobile Applications:  User Registration and Login (Email/Mobile OTP/Social Media)  Product Catalogue with search and filter functionality  Shopping Cart and Wishlist  Secure Online Payment Gateway Integration (Razorpay/PayU)  Order Tracking and History  Push Notifications for offers and order status updates  Customer Profile Management 3.
+
