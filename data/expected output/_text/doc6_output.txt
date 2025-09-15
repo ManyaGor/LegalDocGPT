@@ -1,0 +1,58 @@
+SOFTWARE DEVELOPMENT AGREEMENT – Simplified Summary
+1. Date: Signed on 22 August 2025.
+2. Parties:
+o Client: FreshHarvest Organics Pvt. Ltd., 101, First Floor, Pride Plaza,
+Senapati Bapat Road, Pune – 411016.
+o Developer: CodeGenius Infotech LLP, 3rd Floor, Innovate IT Park, Vashi,
+Navi Mumbai – 400703.
+3. Project Purpose:
+o Client wants a mobile application for its e-commerce operations.
+o Developer will design and deliver the app named “FreshHarvest” for iOS
+and Android.
+4. Scope of Services (Annexure A):
+o Mobile app for iOS and Android.
+o Web-based Admin Panel for managing users, products, and orders.
+o Features:
+ User registration/login (Email, Mobile OTP, Social Media).
+ Product catalogue with search/filter.
+ Shopping cart and wishlist.
+ Secure payment gateway (Razorpay/PayU).
+ Order tracking and history.
+ Push notifications.
+ Customer profile management.
+5. Project Cost:
+o Fixed cost: ₹15,00,000 (exclusive of GST).
+6. Payment Schedule:
+o 30% (₹4,50,000) on signing the Agreement.
+o 30% (₹4,50,000) after approval of UI/UX designs & wireframes.
+o 30% (₹4,50,000) on delivery of first beta version.
+o 10% (₹1,50,000) on final deployment and acceptance testing.
+7. Timeline (Annexure A):
+o UI/UX Design: 4 weeks.
+o Development & Alpha Build: 10 weeks.
+o Beta Testing & Revisions: 4 weeks.
+o Final Deployment & Acceptance: 2 weeks.
+o Total: ~20 weeks.
+8. Acceptance Testing:
+o Client has 14 business days to test after delivery.
+o If issues are found, Developer must fix them at no extra cost.
+o If no issues are reported in 14 days → software is deemed accepted.
+9. Intellectual Property (IP) Rights:
+o After full payment, all rights to source code, object code, and documentation
+transfer to the Client.
+o Developer keeps ownership of its pre-existing tools/libraries used.
+10. Change Requests:
+o Any scope changes must be written and agreed upon in a Change Order,
+including new costs/timelines.
+11. Warranty & Support:
+o Developer provides a 90-day warranty from final acceptance.
+o Fixes for bugs/defects during this period are free.
+
+12. Confidentiality:
+o Both Parties must keep business, technical, and financial info confidential.
+13. Governing Law & Jurisdiction:
+o Governed by Indian law.
+o Mumbai courts have exclusive jurisdiction.
+14. Signatures:
+o For Client: Rina Mehta, Director.
+o For Developer: Sameer Shah, Designated Partner.

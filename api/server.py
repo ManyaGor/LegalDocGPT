@@ -4,8 +4,8 @@ from typing import List
 from fastapi import FastAPI, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse
-from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 from fpdf import FPDF
+from simple_model_service import get_model_service
 
 # --- CORS (allow Next.js on localhost:3000) ---
 app = FastAPI()
@@ -17,14 +17,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# --- Model (load once) ---
-MODEL_NAME = "t5-small"
-tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_NAME)
-
-MAX_INPUT_TOKENS  = 512
-MAX_SUMMARY_TOKENS = 180
-OVERLAP_TOKENS     = 64
+# --- Model service will be loaded lazily ---
 
 # --- Utilities reused from your pipeline ---
 def sanitize(s: str) -> str:
@@ -79,36 +72,7 @@ def preprocess_text(text: str) -> str:
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text.strip()
 
-def chunk_by_tokens(text: str, max_len=MAX_INPUT_TOKENS, overlap=OVERLAP_TOKENS) -> List[str]:
-    ids = tokenizer.encode(text, truncation=False)
-    chunks, start, stride = [], 0, max_len - overlap
-    while start < len(ids):
-        end = min(start + max_len, len(ids))
-        chunks.append(tokenizer.decode(ids[start:end], skip_special_tokens=True))
-        if end == len(ids): break
-        start += stride
-    return chunks
-
-def summarize_chunk(t: str) -> str:
-    inp = "summarize: " + t
-    inputs = tokenizer(inp, return_tensors="pt", truncation=True, max_length=MAX_INPUT_TOKENS)
-    out_ids = model.generate(
-        **inputs, max_length=MAX_SUMMARY_TOKENS, num_beams=4,
-        length_penalty=1.0, early_stopping=True, no_repeat_ngram_size=3
-    )
-    return tokenizer.decode(out_ids[0], skip_special_tokens=True)
-
-def to_bullets(text: str) -> List[str]:
-    parts = re.split(r"(?:\n|\r|\r\n|•|-|\u2022|;|\.)(?:\s+|$)", text)
-    points, seen = [], set()
-    for p in parts:
-        p = re.sub(r"\s+", " ", p).strip()
-        if len(p) >= 4:
-            low = p.lower()
-            if low not in seen:
-                seen.add(low)
-                points.append(p.rstrip(".") + ".")
-    return points[:12]
+# Old summarization functions removed - now using model service
 
 @app.post("/process")
 async def process(file: UploadFile = File(...)):
@@ -119,7 +83,7 @@ async def process(file: UploadFile = File(...)):
         with open(in_path, "wb") as f:
             f.write(await file.read())
 
-        # extract
+        # extract text
         if in_path.lower().endswith(".pdf"):
             raw = extract_text_pdf(in_path)
         elif in_path.lower().endswith(".docx"):
@@ -133,17 +97,23 @@ async def process(file: UploadFile = File(...)):
         # preprocess
         cleaned = preprocess_text(raw)
 
-        # summarize
-        chunks = chunk_by_tokens(cleaned)
-        partials = [summarize_chunk(ch) for ch in chunks]
-        combined = " ".join(partials)
-        bullets = to_bullets(combined)
-        if not bullets:
+        # Get model service and process document
+        model_service = get_model_service()
+        result = model_service.process_document(cleaned)
+        
+        if "error" in result:
+            return JSONResponse({"error": result["error"]}, status_code=500)
+
+        # Extract points from result
+        points = result.get("points", [])
+        summary_text = result.get("summary_text", "")
+        
+        if not points:
             return JSONResponse({"error": "No summary points produced."}, status_code=500)
 
         # write PDF
         pdf_path = os.path.join(tmpdir, "simplified_summary.pdf")
-        pdf_write(bullets, pdf_path, title="Simplified Summary")
+        pdf_write(points, pdf_path, title="Simplified Summary")
 
         # move PDF into project outputs for convenience
         os.makedirs("outputs", exist_ok=True)
@@ -152,8 +122,10 @@ async def process(file: UploadFile = File(...)):
 
         # return both: bullets (json) + downloadable PDF
         return {
-            "points": bullets,
-            "pdf_path": "/download"  # frontend will call this to download
+            "points": points,
+            "pdf_path": "/download",  # frontend will call this to download
+            "summary_text": summary_text,
+            "doc_info": result.get("doc_info", {})
         }
     finally:
         # keep tmp dir for this run; (comment next line if you want to inspect)
@@ -165,3 +137,12 @@ def download():
     if not os.path.exists(path):
         return JSONResponse({"error": "No PDF yet. Run /process first."}, status_code=404)
     return FileResponse(path, media_type="application/pdf", filename="simplified_summary.pdf")
+
+@app.get("/health")
+def health_check():
+    return {"status": "healthy", "message": "LegalDocGPT Backend is running!"}
+
+if __name__ == "__main__":
+    import uvicorn
+    print("Starting LegalDocGPT Backend Server...")
+    uvicorn.run(app, host="127.0.0.1", port=8001)

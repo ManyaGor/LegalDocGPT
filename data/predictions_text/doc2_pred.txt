@@ -7,8 +7,11 @@ o A. The Company
 o SCOPE OF SERVICES  
 The Consultant shall provide the following services to the Company
 2. Purpose: The Company is engaged in the business of developing and marketing enterprise software solutions.
-3. No rights or licenses (patents, copyrights, trademarks, or IP) are granted under this Agreement.
-4. The Company is engaged in the business of developing and marketing enterprise software solutions.
-5. Advising on the design and implementation of a scalable cloud infrastructure for the Company’s new flagship product, ConnectSphere.
+3. During discussions, both parties may exchange confidential information (business plans, finances, customer lists, technical data, trade secrets, know-how, designs, source codes, marketing strategies, etc.).
+4. On termination or written request, the Receiving Party must return or destroy all confidential documents and copies.
+5. No rights or licenses (patents, copyrights, trademarks, or IP) are granted under this Agreement.
 6. The Company is engaged in the business of developing and marketing enterprise software solutions.
 7. Advising on the design and implementation of a scalable cloud infrastructure for the Company’s new flagship product, ConnectSphere.
+8. , company, IP- Important Legal Concepts: A.
+9. The Company is engaged in the business of developing and marketing enterprise software solutions.
+10. Advising on the design and implementation of a scalable cloud infrastructure for the Company’s new flagship product, ConnectSphere.
