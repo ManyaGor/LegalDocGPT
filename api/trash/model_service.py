@@ -460,3 +460,5 @@ def get_model_service():
         model_service = LegalDocModelService(device=device)
     return model_service
 
+
+
