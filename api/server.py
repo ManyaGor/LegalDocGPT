@@ -6,6 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse
 from fpdf import FPDF
 from simple_model_service import get_model_service
+from enhanced_model_service import get_enhanced_model_service
 
 # --- CORS (allow Next.js on localhost:3000, 3001, 3002) ---
 app = FastAPI()
@@ -97,9 +98,10 @@ async def process(file: UploadFile = File(...)):
         # preprocess
         cleaned = preprocess_text(raw)
 
-        # Get model service and process document
-        model_service = get_model_service()
-        result = model_service.process_document(cleaned)
+        # Use simple model service for reliable, fast processing
+        print("Using simple model service for fast processing...")
+        simple_service = get_model_service()
+        result = simple_service.process_document(cleaned)
         
         if "error" in result:
             return JSONResponse({"error": result["error"]}, status_code=500)

@@ -471,7 +471,7 @@ class SimpleLegalDocModelService:
         # 1. Date
         if doc_info["date"]:
             lines.append(f"{point_num}. This Agreement was signed on {doc_info['date']} (Effective Date).")
-            point_num += 1
+        point_num += 1
         
         # 2. Parties with full details
         if doc_info.get("full_party_details"):
@@ -490,7 +490,7 @@ class SimpleLegalDocModelService:
         # 3. Purpose
         if 'purpose' in sections:
             lines.append(f"{point_num}. Purpose: {sections['purpose'][0]}.")
-            point_num += 1
+        point_num += 1
         
         # 4. Information exchange
         lines.append(f"{point_num}. During discussions, both parties may exchange confidential information (business plans, finances, customer lists, technical data, trade secrets, know-how, designs, source codes, marketing strategies, etc.).")
@@ -515,12 +515,12 @@ class SimpleLegalDocModelService:
         # 7. Term
         if doc_info["durations"]:
             lines.append(f"{point_num}. Term: This Agreement is effective for {doc_info['durations'][0]} from the Effective Date.")
-            point_num += 1
+        point_num += 1
         
         # 8. Extended confidentiality
         if len(doc_info["durations"]) > 1:
             lines.append(f"{point_num}. Confidentiality obligations continue for {doc_info['durations'][1]} after termination.")
-            point_num += 1
+        point_num += 1
         
         # 9. Return/Destroy obligations
         lines.append(f"{point_num}. On termination or written request, the Receiving Party must return or destroy all confidential documents and copies.")
@@ -573,26 +573,26 @@ class SimpleLegalDocModelService:
             lines.append(f"{point_num}. Employment relationship:")
             for party in doc_info["parties"][:2]:
                 lines.append(f"o {party}")
-            point_num += 1
+        point_num += 1
         
         # Position and duties
         if 'obligations' in sections:
             lines.append(f"{point_num}. Position and responsibilities:")
             for duty in sections['obligations'][:3]:
                 lines.append(f"o {duty}")
-            point_num += 1
+        point_num += 1
         
         # Compensation
         if 'payment' in sections:
             lines.append(f"{point_num}. Compensation:")
             for payment in sections['payment'][:2]:
                 lines.append(f"o {payment}")
-            point_num += 1
+        point_num += 1
         
         # Duration
         if doc_info["durations"]:
             lines.append(f"{point_num}. Employment term: {doc_info['durations'][0]}")
-            point_num += 1
+        point_num += 1
         
         return lines
 
@@ -606,24 +606,24 @@ class SimpleLegalDocModelService:
             lines.append(f"{point_num}. Lease parties:")
             for party in doc_info["parties"][:2]:
                 lines.append(f"o {party}")
-            point_num += 1
+        point_num += 1
         
         # Property details
         if 'purpose' in sections:
             lines.append(f"{point_num}. Property: {sections['purpose'][0]}")
-            point_num += 1
+        point_num += 1
         
         # Rent and payment
         if 'payment' in sections:
             lines.append(f"{point_num}. Rent and payment terms:")
             for payment in sections['payment'][:3]:
                 lines.append(f"o {payment}")
-            point_num += 1
+        point_num += 1
         
         # Lease term
         if doc_info["durations"]:
             lines.append(f"{point_num}. Lease term: {doc_info['durations'][0]}")
-            point_num += 1
+        point_num += 1
         
         return lines
 
@@ -637,19 +637,19 @@ class SimpleLegalDocModelService:
             lines.append(f"{point_num}. Partnership members:")
             for party in doc_info["parties"][:4]:
                 lines.append(f"o {party}")
-            point_num += 1
+        point_num += 1
         
         # Business purpose
         if 'purpose' in sections:
             lines.append(f"{point_num}. Business purpose: {sections['purpose'][0]}")
-            point_num += 1
+        point_num += 1
         
         # Partnership terms
         if 'terms' in sections:
             lines.append(f"{point_num}. Partnership terms:")
             for term in sections['terms'][:3]:
                 lines.append(f"o {term}")
-            point_num += 1
+        point_num += 1
         
         return lines
 
@@ -663,19 +663,19 @@ class SimpleLegalDocModelService:
             lines.append(f"{point_num}. Service agreement parties:")
             for party in doc_info["parties"][:2]:
                 lines.append(f"o {party}")
-            point_num += 1
+        point_num += 1
         
         # Services to be provided
         if 'purpose' in sections:
             lines.append(f"{point_num}. Services: {sections['purpose'][0]}")
-            point_num += 1
+        point_num += 1
         
         # Payment terms
         if 'payment' in sections:
             lines.append(f"{point_num}. Payment terms:")
             for payment in sections['payment'][:3]:
                 lines.append(f"o {payment}")
-            point_num += 1
+        point_num += 1
         
         return lines
 
@@ -687,21 +687,21 @@ class SimpleLegalDocModelService:
         # Testator
         if doc_info["parties"]:
             lines.append(f"{point_num}. Testator: {doc_info['parties'][0]}")
-            point_num += 1
+        point_num += 1
         
         # Beneficiaries
         if len(doc_info["parties"]) > 1:
             lines.append(f"{point_num}. Beneficiaries:")
             for party in doc_info["parties"][1:4]:
                 lines.append(f"o {party}")
-            point_num += 1
+        point_num += 1
         
         # Bequests
         if 'terms' in sections:
             lines.append(f"{point_num}. Bequests and distributions:")
             for bequest in sections['terms'][:3]:
                 lines.append(f"o {bequest}")
-            point_num += 1
+        point_num += 1
         
         return lines
 
@@ -713,14 +713,14 @@ class SimpleLegalDocModelService:
         # Document title and date
         if doc_info["date"]:
             lines.append(f"{point_num}. Document dated: {doc_info['date']}")
-            point_num += 1
+        point_num += 1
         
         # Parties
         if doc_info["parties"]:
             lines.append(f"{point_num}. Parties involved:")
             for party in doc_info["parties"][:4]:
                 lines.append(f"o {party}")
-            point_num += 1
+        point_num += 1
         
         # Key sections
         for section_name, content in sections.items():
@@ -728,7 +728,7 @@ class SimpleLegalDocModelService:
                 lines.append(f"{point_num}. {section_name.replace('_', ' ').title()}:")
                 for item in content[:2]:
                     lines.append(f"o {item}")
-            point_num += 1
+        point_num += 1
         
         # Important sentences not covered above
         important_sentences = [s for s in sentences if len(s) > 30 and not any(
@@ -746,14 +746,17 @@ class SimpleLegalDocModelService:
         return self.create_adaptive_summary(text, doc_info)
     
     def process_document(self, text: str) -> Dict:
-        """Process a document and return summary points using NER."""
+        """Process a document and return summary points - optimized for speed."""
         try:
             # Initialize if needed
             if not self._initialized:
                 self.initialize()
             
-            # Use enhanced NER-based extraction
-            doc_info = self.extract_enhanced_document_info(text)
+            print("Processing document with fast simple model...")
+            
+            # Use basic extraction for speed
+            legal_context = self.extract_legal_context(text)
+            doc_info = self.extract_document_info(text, legal_context)
             
             # Create legal summary
             final_summary = self.create_legal_summary(text, doc_info)
