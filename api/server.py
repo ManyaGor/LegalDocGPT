@@ -6,7 +6,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse
 from fpdf import FPDF
 from simple_model_service import get_model_service
-from enhanced_model_service import get_enhanced_model_service
 
 # --- CORS (allow Next.js on localhost:3000, 3001, 3002) ---
 app = FastAPI()
@@ -53,12 +52,30 @@ def pdf_write(points: List[str], pdf_path: str, title="Simplified Summary"):
 
 def extract_text_pdf(path: str) -> str:
     import PyPDF2
+    import fitz  # PyMuPDF
     text = ""
-    with open(path, "rb") as f:
-        reader = PyPDF2.PdfReader(f)
-        for page in reader.pages:
-            t = page.extract_text() or ""
-            text += t + "\n"
+    
+    # Try PyMuPDF first for better text extraction
+    try:
+        doc = fitz.open(path)
+        for page_num in range(len(doc)):
+            page = doc.load_page(page_num)
+            text += page.get_text() + "\n"
+        doc.close()
+        return text
+    except Exception as e:
+        print(f"PyMuPDF extraction failed: {e}, falling back to PyPDF2")
+    
+    # Fallback to PyPDF2
+    try:
+        with open(path, "rb") as f:
+            reader = PyPDF2.PdfReader(f)
+            for page in reader.pages:
+                t = page.extract_text() or ""
+                text += t + "\n"
+    except Exception as e:
+        print(f"PyPDF2 extraction failed: {e}")
+    
     return text
 
 def extract_text_docx(path: str) -> str:

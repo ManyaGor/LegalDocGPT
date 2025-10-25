@@ -1,3 +1,0 @@
-1st	(ORDINAL)
-october 2025	(DATE)
-30 days	(DATE)
